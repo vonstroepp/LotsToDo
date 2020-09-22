@@ -3,11 +3,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import { appStyles } from '../../css/Styles';
 
 export function Header({ title, bodyText }) {
-    console.log('Styles',  appStyles.headerContainer )
+  const styles = appStyles;
     return (
-      <View style={appStyles.headerContainer}>
-        <Text style={appStyles.headerText}>{title.toUpperCase()}</Text>
-        <Text style={ appStyles.bodyText }>{ bodyText }</Text>
+      <View style={styles.headerContainer}>
+        <Text style={styles.headerText}>{title.toUpperCase()}</Text>
+        <Text style={ styles.bodyText }>{ bodyText }</Text>
       </View>
     );
   }
