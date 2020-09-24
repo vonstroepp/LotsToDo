@@ -17,22 +17,34 @@ const Todo = ({todo, index, completeTodo, removeTodo}) => {
                             textDecorationLine: 'line-through'
                         }
                         : {
-                            color: styles.itemListText
+                            color: styles.bodyText
                         }
                 ]}  
                 >
                     {todo.text}
                 </Text>
-                <View 
-                style = {styles.button}>
-                <TouchableOpacity onPressOut = { () => removeTodo(index) } >
-                    <MaterialIcons 
-                        name = "delete-forever"
-                        size = { 24 }
-                        color = { "white" }
-                    />
-                </TouchableOpacity>  
-            </View>
+                <View style = { styles.column }>
+                    <View 
+                    style = {styles.button}>
+                        <TouchableOpacity onPressOut = { () => completeTodo(index) } >
+                            <MaterialIcons 
+                                name = "done"
+                                size = { 12 }
+                                color = { "black" }
+                            />
+                        </TouchableOpacity>  
+                    </View>
+                    <View 
+                    style = {styles.button}>
+                        <TouchableOpacity onPressOut = { () => removeTodo(index) } >
+                            <MaterialIcons 
+                                name = "delete-forever"
+                                size = { 12 }
+                                color = { "black" }
+                            />
+                        </TouchableOpacity>  
+                    </View>
+                </View>
             </View>
         </View>
     )

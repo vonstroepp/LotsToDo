@@ -1,3 +1,5 @@
+import { lightWhite } from "./Colors";
+
 const appStyles = {
         headerContainer: {
         marginTop: 20,
@@ -26,6 +28,9 @@ const appStyles = {
           marginTop: 40,
           paddingLeft: 15
         },
+        itemListTextStrike: {
+          color: "white"
+        },
       listContainer: {
         // width: width - 50,
         flexDirection: 'row',
@@ -53,6 +58,7 @@ const appStyles = {
       column: {
         flexDirection: 'row',
         alignItems: 'center',
+        marginHorizontal: 15
         // width: width / 1.5
       },
       text: {

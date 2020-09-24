@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, StatusBar, Button } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, Button } from 'react-native';
 // import { AsyncStorage } from 'react-native';
 import { primaryGradientArray } from './css/Colors';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -7,6 +7,7 @@ import { Header } from './components/Header/Header';
 import { SubTitle } from './components/SubTitle';
 import Todo from './components/Todo';
 import { ScrollView } from 'react-native-gesture-handler';
+import TodoForm from './components/TodoForm';
 // import uuid from 'uuid/dist/v1';
 
 import { appStyles } from './css/Styles';
@@ -66,6 +67,12 @@ export default function App() {
                 removeTodo = { removeTodo }
               />
             ))}
+          </View>
+          <View>
+              <Text styles = {styles.text }>
+                Add a new Todo
+              </Text>
+              <TodoForm addTodo = { addTodo }/>
           </View>
         </View>
 
