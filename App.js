@@ -46,7 +46,7 @@ export default function App() {
 
     const removeTodo = index => {
       const newTodos = [...toDos];
-      newTodos.splics(index, 1);
+      newTodos.splice(index, 1);
       setToDos(newTodos);
     }
 
