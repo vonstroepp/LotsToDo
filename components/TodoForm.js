@@ -15,19 +15,18 @@ const TodoForm = ({ addTodo }) => {
     return (
         <View>
         <TextInput 
-            style = { appStyles.input }
+            style = { styles.input }
             value = { value }
             onChangeText = {event => {
-                // console.log(event)}
                 setValue(event)}
             } 
             placeholder = "Type here to add note"
-            placeholderTextColor = { styles.inputPlaceholder }
+            placeholderTextColor ="antiquewhite"
             multiline = { true }
             autoCapitalize = "sentences"
-            underlineColorAndroid = "trasparent"
-            selectionColor = { 'white' }
-            maxLength = { 30 }
+            underlineColorAndroid = "transparent"
+            selectionColor = "white"
+            maxLength = { 130 }
             returnKeyType = "done"
             autoCorrect = { false }
             blurOnSubmit = { true }

@@ -1,14 +1,17 @@
 import { lightWhite } from "./Colors";
 
 const appStyles = {
+        TextInput: {
+          color: "white"
+        },
         headerContainer: {
-        marginTop: 20,
-        padding: 5    
+          marginTop: 20,
+          padding: 5    
         },
         headerText: {
-        color: 'white',
-        fontSize: 22,
-        fontWeight: '500'
+          color: 'white',
+          fontSize: 22,
+          fontWeight: '500'
         },
         bodyText : {
             color: 'white',
@@ -16,10 +19,10 @@ const appStyles = {
         },
         input: {
             paddingTop: 10,
-            paddingRight: 15,
-            fontSize: 34,
+            padding: 15,
+            fontSize: 12,
             color: 'white',
-            fontWeight: '500'
+            marginBottom: 10
           },
         centered: {
           alignItems: 'center'
@@ -28,11 +31,15 @@ const appStyles = {
           marginTop: 40,
           paddingLeft: 15
         },
+        inputPlaceHolder: {
+          color: "white"
+        },
         itemListTextStrike: {
           color: "white"
         },
       listContainer: {
         // width: width - 50,
+        color: "white",
         flexDirection: 'row',
         borderRadius: 5,
         backgroundColor: 'white',
@@ -58,13 +65,14 @@ const appStyles = {
       column: {
         flexDirection: 'row',
         alignItems: 'center',
-        marginHorizontal: 15
+        marginHorizontal: 0,
         // width: width / 1.5
       },
       text: {
         fontWeight: '500',
         fontSize: 16,
-        marginVertical: 15
+        marginVertical: 15,
+        color: "blue"
       },
       circle: {
         width: 30,

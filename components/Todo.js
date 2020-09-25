@@ -6,6 +6,7 @@ import { appStyles } from '../css/Styles' ;
 const Todo = ({todo, index, completeTodo, removeTodo}) => {
     
     const styles = appStyles;
+    
     return (
         <View style = { styles.ListContainer } >
             <View style = { styles.column }>
@@ -17,7 +18,7 @@ const Todo = ({todo, index, completeTodo, removeTodo}) => {
                             textDecorationLine: 'line-through'
                         }
                         : {
-                            color: styles.bodyText
+                            color: "white"
                         }
                 ]}  
                 >
@@ -30,7 +31,7 @@ const Todo = ({todo, index, completeTodo, removeTodo}) => {
                             <MaterialIcons 
                                 name = "done"
                                 size = { 12 }
-                                color = { "black" }
+                                color = { "white" }
                             />
                         </TouchableOpacity>  
                     </View>
@@ -40,7 +41,7 @@ const Todo = ({todo, index, completeTodo, removeTodo}) => {
                             <MaterialIcons 
                                 name = "delete-forever"
                                 size = { 12 }
-                                color = { "black" }
+                                color = { "white" }
                             />
                         </TouchableOpacity>  
                     </View>

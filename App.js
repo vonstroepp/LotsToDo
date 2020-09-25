@@ -68,11 +68,9 @@ export default function App() {
               />
             ))}
           </View>
-          <View>
-              <Text styles = {styles.text }>
-                Add a new Todo
-              </Text>
-              <TodoForm addTodo = { addTodo }/>
+          <View style = { styles.centered }>
+            <SubTitle subtitle = "Add a new Todo" />
+            <TodoForm addTodo = { addTodo }/>
           </View>
         </View>
 
